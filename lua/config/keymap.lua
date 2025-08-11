@@ -63,9 +63,9 @@ vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d")
 
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<leader>f", function()
-    require("conform").format({ bufnr = 0 })
-end)
+--vim.keymap.set("n", "<leader>f", function()
+--    require("conform").format({ bufnr = 0 })
+--end)
 
 -- replace word under cursor everywhere
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
